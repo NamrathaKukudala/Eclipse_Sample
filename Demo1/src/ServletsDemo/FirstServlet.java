@@ -29,7 +29,7 @@ public class FirstServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String name="",email;
+		String name="",email,age;
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
@@ -37,7 +37,8 @@ public class FirstServlet extends HttpServlet {
 		out.print("<h1>This is a Servlet</h1>");
 		name=request.getParameter("txtname");
 		email=request.getParameter("txtemail");
-		out.println("<h1 style=color:red >Welcome "+name+" your email id is "+email+"</h1>");
+		age=request.getParameter("txtage");
+		out.println("<h1 style=color:red >Welcome "+name+" your email id is "+email+" and age is "+age+"</h1>");
 	}
 
 	/**
