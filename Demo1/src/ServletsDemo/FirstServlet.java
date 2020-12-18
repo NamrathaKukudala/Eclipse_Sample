@@ -39,7 +39,7 @@ public class FirstServlet extends HttpServlet {
 		email=request.getParameter("txtemail");
 		age=request.getParameter("txtage");
 		System.out.println("Hello");
-		System.out.println("World");
+		System.out.println("People");
 		//adding a comment
 		out.println("<h1 style=color:red >Welcome "+name+" your email id is "+email+" and age is "+age+"</h1>");
 	}
