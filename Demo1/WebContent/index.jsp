@@ -11,6 +11,7 @@
 	<form method="get" action="show">
 		Enter name: <input type="text" name="txtname"/><br>
 		Enter email: <input type="text" name="txtemail"/><br>
+		Enter age: <input type="text" name="txtage"/><br>
 		<input type="submit" value="Click"/>
 	</form>
 </body>
