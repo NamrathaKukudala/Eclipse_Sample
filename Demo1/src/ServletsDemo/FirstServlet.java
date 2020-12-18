@@ -34,6 +34,7 @@ public class FirstServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		out.print("<h1>This is a Servlet</h1>");
+		out.print("<h1>This is a Servlet</h1>");
 		name=request.getParameter("txtname");
 		email=request.getParameter("txtemail");
 		out.println("<h1 style=color:red >Welcome "+name+" your email id is "+email+"</h1>");
